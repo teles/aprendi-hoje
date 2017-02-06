@@ -1,7 +1,7 @@
 aprendizados:
   allowedFields: ["aprendizado"]
   branch: "master"
-  filename: "aprendizado-{@timestamp}"
+  filename: "aprendizado-{options.dia}-{@timestamp}"
   format: "json"
   moderation: true
   path: "_data/{options.ano}/{options.mes}"
