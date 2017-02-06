@@ -1,0 +1,24 @@
+{
+  "name": "aprendi-hoje",
+  "version": "1.0.0",
+  "description": "Uma lista de coisas que aprendi recentemente separada por dias, meses e ano.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/teles/aprendi-hoje.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/teles/aprendi-hoje/issues"
+  },
+  "homepage": "https://github.com/teles/aprendi-hoje#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-concat-json": "^1.0.0",
+    "gulp-load-tasks": "^0.8.4"
+  }
+}
