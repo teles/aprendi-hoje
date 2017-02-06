@@ -1,0 +1,7 @@
+aprendizados:
+  branch: "master"
+  filename: "aprendizado{@timestamp}"
+  format: "json"
+  moderation: true
+  path: "_data/teste/"
+  allowedFields: ["aprendizado"]
