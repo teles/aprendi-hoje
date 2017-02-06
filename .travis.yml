@@ -1,0 +1,11 @@
+language: node_js
+node_js:
+- stable
+script: ./tasks/deploy.sh
+env:
+  global:
+  - ENCRYPTION_LABEL: "e70c5a1d02d2"
+  - COMMIT_AUTHOR_EMAIL: "frontpressbot@gmail.com"
+cache:
+  directories:
+    - node_modules
