@@ -3,11 +3,6 @@ aprendizados:
   branch: "master"
   filename: "entry{@timestamp}"
   format: "json"
-  generatedFields:
-    date:
-      type: date
-      options:
-        format: "timestamp-seconds"
   moderation: true
   path: "_data/aprendizados"
   requiredFields: ["aprendizado"]
