@@ -4,5 +4,5 @@ aprendizados:
   filename: "{@timestamp}"
   format: "yaml"
   moderation: true
-  path: "_data/aprendizados/{fields.dia}"
+  path: "_data/aprendizados"
   requiredFields: ["aprendizado"]
