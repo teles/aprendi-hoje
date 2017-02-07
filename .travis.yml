@@ -4,8 +4,7 @@ node_js:
 script: ./tasks/update.sh
 env:
   global:
-  - ENCRYPTION_LABEL: "4901db4b206c"
-  - COMMIT_AUTHOR_EMAIL: "frontpressbot@gmail.com"
+  - COMMIT_AUTHOR_EMAIL: "josetelesmaciel@gmail.com"
 cache:
   directories:
     - node_modules
