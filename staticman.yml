@@ -4,5 +4,5 @@ aprendizados:
   filename: "{@timestamp}"
   format: "json"
   moderation: true
-  path: "_data/{fields.ano}/{fields.mesNome}/{fields.dia}"
+  path: "_data/{fields.ano}/{fields.mesNumero}-{fields.mesNome}/{fields.dia}"
   requiredFields: ["aprendizado"]

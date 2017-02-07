@@ -2,6 +2,6 @@
 
 > Uma lista de coisas que aprendi separada por dias.
 
-* 06 de fevereiro: asda sdasd
-* 06 de fevereiro: Hoje eu aprendi a configurar o staticman
-* 07 de fevereiro: Nasdasdl kajsldkajsldkj
+* 28 de fevereiro: 28 de Fevereiro de 2017
+* 31 de janeiro: 31 de Janeiro de 2017
+* 13 de marco: 13 de Março de 2017
