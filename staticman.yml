@@ -1,8 +1,8 @@
 aprendizados:
-  allowedFields: ["aprendizado", "descricaolonga", "categoria", "ano", "mesNome","mesNumero", "dia"]
+  allowedFields: ["aprendizado", "descricaoLonga", "categoria", "ano", "mesNome","mesNumero", "dia"]
   branch: "master"
   filename: "{@timestamp}"
-  format: "yaml"
+  format: "json"
   moderation: true
-  path: "_data/aprendizados"
+  path: "_data/{fields.ano}/{fields.mesNome}/{fields.dia}"
   requiredFields: ["aprendizado"]
