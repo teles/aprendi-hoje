@@ -1,8 +1,8 @@
 aprendizados:
-  allowedFields: ["aprendizado", "descricaolonga", "categoria", "ano", "mes", "dia"]
+  allowedFields: ["aprendizado", "descricaolonga", "categoria", "ano", "mesNome","mesNumero", "dia"]
   branch: "master"
   filename: "{@timestamp}"
   format: "json"
   moderation: true
-  path: "_data/{options.ano}/{options.mes}/{options.dia}"
+  path: "_data/{options.ano}/{options.mesNome}/{options.dia}"
   requiredFields: ["aprendizado"]
