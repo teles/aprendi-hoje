@@ -2,6 +2,15 @@
 
 > Uma lista de coisas que aprendi separada por dias.
 
-* 28 de fevereiro: 28 de Fevereiro de 2017
-* 31 de janeiro: 31 de Janeiro de 2017
-* 13 de marco: 13 de Março de 2017
+
+# 2016
+
+## 02	
+
+* **07 asda sdasd**: as dasd asd 
+
+# 2017
+
+## 02	
+
+* **07 Hoje eu aprendi a configurar o staticman**: asd asdasdasdads 
