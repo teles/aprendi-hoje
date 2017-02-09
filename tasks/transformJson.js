@@ -8,7 +8,7 @@ module.exports = function() {
  	var task = gulp.src("./temp/aprendizados.json")
     .pipe(jsonTransform(function(aprendizados, file) {
     	var saida = [];
-		
+
 		if(!Array.prototype.getObjectByValue){
 		    Array.prototype.getObjectByValue = function(propertyName, propertyValue){
 		        for(var i=0; i < this.length;i++){
@@ -18,15 +18,18 @@ module.exports = function() {
 		            }
 		        }
 		    };
-		}    	
+		}
+
+		aprendizados = aprendizados.reverse();
 
 		for(var i=0; i < aprendizados.length; i++){
-		   var anoMesDia = aprendizados[i].date.match(/(20[0-9]{2})-([0-9]{2})-([0-9]{2})/);   
+		// for(var i=aprendizados.length - 1; i <= 0; i--){
+		   var anoMesDia = aprendizados[i].date.match(/(20[0-9]{2})-([0-9]{2})-([0-9]{2})/);
 		   var idDoAno = anoMesDia[1];
 		   var idDoMes = anoMesDia[2];
 		   var idDoDia = anoMesDia[3];
-		   var anoDaSaida, mesDaSaida, diaDaSaida;   
-		   
+		   var anoDaSaida, mesDaSaida, diaDaSaida;
+
 		   // verifica e adiciona ano
 		   if(!saida.anos) saida.anos = [];
 		   var anoJaAdicionado = saida.anos.getObjectByValue("id", idDoAno);
@@ -35,9 +38,9 @@ module.exports = function() {
 		      saida.anos.push(anoDaSaida);
 		   }
 		   else {
-		      anoDaSaida = anoJaAdicionado; 
+		      anoDaSaida = anoJaAdicionado;
 		   }
-		   
+
 		   // verifica e adiciona meses
 		   if(!anoDaSaida.meses) anoDaSaida.meses = [];
 		   var mesJaAdicionado = anoDaSaida.meses.getObjectByValue("id", idDoMes);
@@ -46,9 +49,9 @@ module.exports = function() {
 		      anoDaSaida.meses.push(mesDaSaida);
 		   }
 		   else {
-		      mesDaSaida = mesJaAdicionado; 
-		   }   
-		   
+		      mesDaSaida = mesJaAdicionado;
+		   }
+
 		   // verifica e adiciona dias
 		   if(!mesDaSaida.dias) mesDaSaida.dias = [];
 		   diaDaSaida = {id: idDoDia};
