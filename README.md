@@ -3,14 +3,14 @@
 > Uma lista de coisas que aprendi separada por dias.
 
 
-## 2016
+# 2016
 
-### Fevereiro	
+## 02	
 
 * **07 asda sdasd**: as dasd asd 
 
-## 2017
+# 2017
 
-### Fevereiro	
+## 02	
 
 * **07 Hoje eu aprendi a configurar o staticman**: asd asdasdasdads 

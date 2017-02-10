@@ -20,10 +20,11 @@ SHA=`git rev-parse --verify HEAD`
 # Create a new empty branch if gh-pages doesn't exist yet (should only happen on first deply)
 git clone $REPO
 npm install
+mkdir temp
+echo "{}" > temp/aprendizados.json
 gulp
 
 # Now let's go have some fun with the cloned repo
-cd out
 git config user.name "Travis CI"
 git config user.email "$COMMIT_AUTHOR_EMAIL"
 
