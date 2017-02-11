@@ -7,6 +7,7 @@ module.exports = function() {
 
  	var task = gulp.src("./temp/aprendizados.json")
     .pipe(jsonTransform(function(aprendizados, file) {
+    	console.log(aprendizados);
     	var saida = [];
 
 		if(!Array.prototype.getObjectByValue){
@@ -20,10 +21,7 @@ module.exports = function() {
 		    };
 		}
 
-		// aprendizados = aprendizados.reverse();
-
 		for(var i=0; i < aprendizados.length; i++){
-		// for(var i=aprendizados.length - 1; i <= 0; i--){
 		   var anoMesDia = aprendizados[i].date.match(/(20[0-9]{2})-([0-9]{2})-([0-9]{2})/);
 		   var idDoAno = anoMesDia[1];
 		   var idDoMes = anoMesDia[2];
