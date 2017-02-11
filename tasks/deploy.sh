@@ -7,7 +7,7 @@ set -e # Exit with nonzero exit code if anything fails
 
 SOURCE_BRANCH="master"
 TARGET_BRANCH="master"
-TRAVIS_NAME="Jota Teles"
+TRAVIS_NAME="Travis"
 REPO=`git config remote.origin.url`
 LAST_COMMIT_MESSAGE=$(git log --format=%B -n 1)
 SSH_REPO=${REPO/https:\/\/github.com\//git@github.com:}
