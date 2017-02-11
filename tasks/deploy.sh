@@ -58,8 +58,13 @@ else
 	gulp concat 
 	gulp transformJson 
 	gulp handlebars
-	git add -A .
-	git commit -m "Atualiza README."
-	git push $SSH_REPO $TARGET_BRANCH
-	exit 0    
+
+	if [ -n "$(git status --porcelain)" ]; then 	
+		git add -A .
+		git commit -m "Atualiza README."
+		git push $SSH_REPO $TARGET_BRANCH
+		exit 0
+	else
+		exit 0    		
+	fi		
 fi
