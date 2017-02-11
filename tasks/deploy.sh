@@ -58,6 +58,8 @@ if [ -n "$(git status --porcelain)" ]; then
 	mkdir temp
 	echo "{}" > temp/aprendizados.json
 	gulp
+	git add README.md
+	git commit -m "Atualiza README."
     exit 0
 else   
     echo "${green}Readme file didn't change. Exiting.${reset}"

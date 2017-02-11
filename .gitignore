@@ -1,4 +1,5 @@
 node_modules
 temp
-/oq-aprendi-hoje
-/oq-aprendi-hoje.pub
+oq-aprendi-hoje
+oq-aprendi-hoje.pub
+deploy_key
