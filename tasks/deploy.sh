@@ -54,18 +54,12 @@ git status
 #     ISSUE_NUMBER="no-issue-specified"
 # fi    
 
-if [ -n "$(git status --porcelain)" ]; then 
-	mkdir temp
-	echo "{}" > temp/aprendizados.json
-	gulp
-	git add README.md
-	git commit -m "Atualiza README."
-    exit 0
-else   
-	cat README.md
-    echo "${green}Readme file didn't change. Exiting.${reset}"
-    exit 0
-fi
+mkdir temp
+echo "{}" > temp/aprendizados.json
+gulp
+git add README.md
+git commit -m "Atualiza README."
+exit 0
 
 # Now that we're all set up, we can push.
 git push $SSH_REPO $TARGET_BRANCH
