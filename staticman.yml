@@ -6,3 +6,8 @@ aprendizados:
   moderation: true
   path: "_data/{options.ano}/{options.mesNumero}-{options.mesNome}/{options.dia}"
   requiredFields: ["aprendizado"]
+  generatedFields:
+    date:
+      type: date
+      options:
+        format: iso8601
