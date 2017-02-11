@@ -48,17 +48,18 @@ git config user.name "Jota Teles"
 git config user.email "josetelesmaciel@gmail.com"
 git status
 
-if [ $(echo "${LAST_COMMIT_MESSAGE}" | grep -c "\[\?#[0-9]*\]\?" ) -gt 0 ]; then
-    ISSUE_NUMBER=$(echo "${LAST_COMMIT_MESSAGE}" | grep -o "\[\?#[0-9]*\]\?")
-else
-    ISSUE_NUMBER="no-issue-specified"
-fi    
+# if [ $(echo "${LAST_COMMIT_MESSAGE}" | grep -c "\[\?#[0-9]*\]\?" ) -gt 0 ]; then
+#     ISSUE_NUMBER=$(echo "${LAST_COMMIT_MESSAGE}" | grep -o "\[\?#[0-9]*\]\?")
+# else
+#     ISSUE_NUMBER="no-issue-specified"
+# fi    
 
 if [ -n "$(git status --porcelain)" ]; then 
 	mkdir temp
 	echo "{}" > temp/aprendizados.json
 	gulp
 	git add README.md
+	cat README.md
 	git commit -m "Atualiza README."
     exit 0
 else   
