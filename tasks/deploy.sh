@@ -16,11 +16,6 @@ LAST_COMMIT_AUTHOR=$(git log --format="%an" -1)
 green=`tput setaf 2`
 reset=`tput sgr0`
 
-if [ "$LAST_COMMIT_AUTHOR" = "$TRAVIS_NAME" ]; then
-    echo "Cannot build a Travis commit. Exiting"
-    exit 0
-fi
-
 # Pull requests and commits to other branches are ignored.
 if [ "$TRAVIS_PULL_REQUEST" != "false" -o "$TRAVIS_BRANCH" != "$SOURCE_BRANCH" ]; then
     echo "Ignoring pull request"
@@ -54,20 +49,17 @@ git status
 #     ISSUE_NUMBER="no-issue-specified"
 # fi    
 
-mkdir temp
-echo "{}" > temp/aprendizados.json
-echo "aprendizados.json depois do echo"
-
-gulp concat 
-echo "aprendizados.json depois do concat"
-cat temp/aprendizados.json
-
-gulp transformJson 
-echo "aprendizados.json depois do transform"
-cat temp/aprendizados.json
-
-gulp handlebars
-git add -A .
-git commit -m "Atualiza README."
-git push $SSH_REPO $TARGET_BRANCH
-exit 0
+if [ "$LAST_COMMIT_AUTHOR" = "$TRAVIS_NAME" ]; then
+    echo "Cannot build a Travis commit. Exiting"
+    exit 0
+else
+	mkdir temp
+	echo "{}" > temp/aprendizados.json
+	gulp concat 
+	gulp transformJson 
+	gulp handlebars
+	git add -A .
+	git commit -m "Atualiza README."
+	git push $SSH_REPO $TARGET_BRANCH
+	exit 0    
+fi
