@@ -56,7 +56,7 @@ git status
 
 mkdir temp
 echo "{}" > temp/aprendizados.json
-gulp
+gulp concat transformJson handlebars
 git add -A .
 git commit -m "Atualiza README."
 git push $SSH_REPO $TARGET_BRANCH
