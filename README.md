@@ -16,3 +16,5 @@
 * **10 O que é o ENCRYPTION_LABEL do travis**: Graças a isso pude fazer uma coisas bem legais 
 
 * **10 O que é o ENCRYPTION_LABEL do travis**: Graças a isso pude fazer uma coisas bem legais 
+
+* **11 Hoje eu aprendi a configurar o staticman**: asd asda sdasd 
