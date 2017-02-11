@@ -57,9 +57,9 @@ git status
 mkdir temp
 echo "{}" > temp/aprendizados.json
 gulp
-git add README.md
+git add -A .
 git commit -m "Atualiza README."
+git push $SSH_REPO $TARGET_BRANCH
 exit 0
 
 # Now that we're all set up, we can push.
-git push $SSH_REPO $TARGET_BRANCH
