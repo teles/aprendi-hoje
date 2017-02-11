@@ -59,10 +59,10 @@ if [ -n "$(git status --porcelain)" ]; then
 	echo "{}" > temp/aprendizados.json
 	gulp
 	git add README.md
-	cat README.md
 	git commit -m "Atualiza README."
     exit 0
 else   
+	cat README.md
     echo "${green}Readme file didn't change. Exiting.${reset}"
     exit 0
 fi
