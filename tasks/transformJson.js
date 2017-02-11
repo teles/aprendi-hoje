@@ -20,7 +20,7 @@ module.exports = function() {
 		    };
 		}
 
-		aprendizados = aprendizados.reverse();
+		// aprendizados = aprendizados.reverse();
 
 		for(var i=0; i < aprendizados.length; i++){
 		// for(var i=aprendizados.length - 1; i <= 0; i--){
