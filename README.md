@@ -7,14 +7,4 @@
 
 ### Fevereiro
 
-* **Dia 11 - Hoje eu aprendi a configurar o staticman**: asd asda sdasd 
-
-* **Dia 10 - O que é o ENCRYPTION_LABEL do travis**: Graças a isso pude fazer uma coisas bem legais 
-
-* **Dia 10 - O que é o ENCRYPTION_LABEL do travis**: Graças a isso pude fazer uma coisas bem legais 
-
-* **Dia 10 - 3q4234 234**: sdf3 4545 
-
-* **Dia 09 - 1**: 4 
-
-* **Dia 09 - exemplo**: exemplo 
+* **Dia 13 - Ciclo de TDD com javascript**: Ví em um vídeo do Alura que o TDD em javascript tem o seguinte ciclo: Vermelho -&gt; Verde -&gt; Refatorar. 
