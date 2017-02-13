@@ -1,0 +1,28 @@
+.btn 
+    background-color: $color-white
+    border-radius: 3px
+    box-sizing: border-box
+    color: material-color('blue-grey', '500')
+    display: inline-block
+    font-size: 12px
+    padding: spacing(1) spacing(2)
+    text-align: center
+    text-decoration: none
+    text-transform: uppercase
+    cursor: pointer
+    border: 0
+    @include transition(all ease-in .3s)
+    &:hover
+        color: material-color('blue', '500')
+    &:active            
+        color: material-color('orange', '600')
+
+    &.btn-important
+        background-color: $background-color-important
+        color: $color-white
+    &[disabled='disabled'],
+    &[disabled]
+        background-color: $background-color-disabled
+        color: $color-disabled
+        cursor: default
+        pointer-events: none

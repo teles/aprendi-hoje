@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<base href="/"/>
+	<meta charset="UTF-8">
+	<title>Links da semana</title>
+	<link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="css/links-da-semana.css">
+	<script>
+		var formulario = document.querySelector("[data-selector='formulario-principal']");
+
+		var nomesDosMeses = ["janeiro", "fevereiro", "marco", "abril", "maio", "junho", "julho", "agosto", "setembro", "outubro", "novembro", "dezembro"];
+
+		var hoje = new Date();
+		var dataAtual = {};
+		dataAtual.dia = hoje.getDate();
+		dataAtual.mesNumero = hoje.getMonth()+1;
+		dataAtual.mesNome = nomesDosMeses[hoje.getMonth()];
+		dataAtual.ano = hoje.getFullYear();
+
+		if(dataAtual.dia<10) {
+		    dataAtual.dia='0'+dataAtual.dia;
+		} 
+		if(dataAtual.mesNumero<10) {
+		    dataAtual.mesNumero='0'+dataAtual.mesNumero;
+		} 
+		var mapaDeInputs = {
+		  "options[dia]": dataAtual.dia,
+		  "options[mesNome]": dataAtual.mesNome,
+		  "options[mesNumero]": dataAtual.mesNumero,
+		  "options[ano]": dataAtual.ano
+		};
+
+		for(var input in mapaDeInputs){
+		    var inputElement = document.createElement("input");
+		    inputElement.setAttribute("type", "hidden"); 
+		    inputElement.setAttribute("name", input);
+		    inputElement.setAttribute("value", mapaDeInputs[input]);
+		    formulario.appendChild(inputElement);
+		}		
+	</script>	
+</head>
+<body>
+	<header>
+		<menu class='navigation-menu'>
+		</menu>
+	</header>
+	<main>
+		<h1 class='title-page'>Novo aprendizado</h1>
+		<form method="POST" action="https://api.staticman.net/v2/entry/teles/aprendi-hoje/master/aprendizados" data-selector="formulario-principal" class="form row"> 
+			<input name="fields[aprendizado]" type="text" id="aprendizado" placeholder="Qual foi seu aprendizado de hoje?" class="col-12 p-margin-top-1"><br>
+		  	<textarea name="fields[descricaoLonga]" type="text" id="descricaoLonga" placeholder="Descreva-o em detalhes se quiser." class="col-12"></textarea><br>
+		  	<input name="fields[categoria]" type="text" id="categoria" placeholder="Adicione uma categoria como: línguas, programação, javascript, etc" class="col-12"><br> 
+		  	<button type="submit" class="btn btn-important col-12">Registrar aprendizado.</button>
+		</form>	
+	</main>
+</body>
+</html>

@@ -1,0 +1,29 @@
+{
+  "name": "links-da-semana",
+  "version": "1.0.0",
+  "description": "Plugin para controle de links da semana",
+  "main": "Gulpfile.js",
+  "dependencies": {
+    "gulp": "^3.9.0",
+    "gulp-inject": "^3.0.0",
+    "gulp-load-tasks": "^0.8.4",
+    "bower": "~1.6.5"
+  },
+  "devDependencies": {
+    "gulp-sass": "~2.1.0",
+    "bower": "~1.6.5"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/teles/links-da-semana.git"
+  },
+  "author": "Jota Teles",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/teles/links-da-semana/issues"
+  },
+  "homepage": "https://github.com/teles/links-da-semana#readme"
+}

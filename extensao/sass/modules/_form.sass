@@ -1,0 +1,19 @@
+.form
+	input,
+	textarea
+		border: none
+		min-height: spacing(4)
+		line-height: 1.5
+		color: material-color('blue-grey', '500')
+		border-bottom: 1px solid material-color('blue-grey', '50')
+		margin-bottom: spacing(1)
+		padding: spacing(1) 0 0 spacing(1)
+		box-sizing: border-box
+		outline: none
+		@include transition(all ease-in .4s)
+		&:active,
+		&:focus
+			outline: none
+			border-bottom: 1px solid material-color('blue-grey', '200')
+		&.ng-invalid.ng-touched
+			border-color: $border-color-error			

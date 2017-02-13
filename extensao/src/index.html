@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<base href="/"/>
+	<meta charset="UTF-8">
+	<title>Links da semana</title>
+	<link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+	<!-- inject:css -->
+	<!-- endinject -->	
+</head>
+<body ng-app='linksdasemana'>
+	<alerts></alerts>
+	<header>
+		<menu class='navigation-menu'>
+			<ul class='navigation-menu-list'>
+				<li class="navigation-menu-item">
+					<a href='/'><i class="icon icon-home"></i></a>
+				</li>
+				<li class="navigation-menu-item p-float-right">
+					<a href ng-click='sm.refreshContent()' ng-disabled='sm.isRefreshingContent'><i class="icon icon-refresh"></i></a>
+				</li>				
+			</ul>
+		</menu>
+	</header>
+	<main ng-view>
+	</main>		
+<!-- 	<footer>
+		<a href ng-click='sm.refreshContent()' ng-disabled='sm.isRefreshingContent'>Atualizar dados</a>
+		<span ng-if='sm.isRefreshingContent'>Atualizando dados...</span>		
+		<a href="/">voltar ao inicio</a>				
+	</footer> -->
+	<!-- inject:js -->
+	<!-- endinject -->
+</body>
+</html>

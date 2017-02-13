@@ -1,0 +1,22 @@
+// #Clearfix
+//
+// `@include m-clearfix;`
+//
+// 1. O espaço no `content` é uma maneira de evitar um bug no Opera
+//     quando o atributo `contenteditable` existe em outro lugar do documento .
+//     Caso constrário, ele faz com que um espaço apareça na parte superior e inferior de elementos
+//     que estão com clearfix.
+//
+// 2. O uso do display `table` invés de `block` só é necessário se é utilizado
+//     `:before` para conter as margins top do elemento filho.
+//
+//
+// Fonte: http://nicolasgallagher.com/micro-clearfix-hack/
+
+@mixin m-clearfix 
+    &:before,
+    &:after
+        content: " "
+        display: table
+    &:after 
+        clear: both
