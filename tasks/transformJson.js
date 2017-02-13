@@ -7,7 +7,7 @@ module.exports = function() {
 
  	var task = gulp.src("./temp/aprendizados.json")
     .pipe(jsonTransform(function(aprendizados, file) {
-    	console.log(aprendizados);
+    	aprendizados.reverse();
     	var saida = [];
 
 		if(!Array.prototype.getObjectByValue){
