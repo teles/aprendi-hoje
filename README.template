@@ -4,13 +4,13 @@
 
 {{#each this}}
 
-# {{id}}
+## {{id}}
 	{{#each this.meses}}
 
-## {{numeroParaNomeDoMes id}}
+### {{numeroParaNomeDoMes id}}
 		{{#each this.dias}}
 
-* **{{id}} {{aprendizado}}**: {{descricaoLonga}} 
+* **Dia {{id}} - {{aprendizado}}**: {{descricaoLonga}} 
 		{{/each}}
 	{{/each}}
 {{/each}}
