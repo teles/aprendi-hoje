@@ -7,7 +7,7 @@
 # {{id}}
 	{{#each this.meses}}
 
-## {{id}}	
+## {{numeroParaNomeDoMes id}}
 		{{#each this.dias}}
 
 * **{{id}} {{aprendizado}}**: {{descricaoLonga}} 
