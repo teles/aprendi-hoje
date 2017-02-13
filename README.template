@@ -1,6 +1,6 @@
 # O que eu aprendi hoje?
 
-> Uma lista de coisas que aprendi separada por dias.
+Este é um repositório com uma lista gerada automaticamente contendo meus aprendizados diários no mundo da tecnologia, línguas e outras coisas.
 
 {{#each this}}
 
