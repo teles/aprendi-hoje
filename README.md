@@ -7,6 +7,10 @@ Este é um repositório com uma lista gerada automaticamente contendo meus apren
 
 ### Março
 
+* **Dia 16 - Componentes em VueJS contém estilo, documento e funcionalidade no mesmo documento.**: Cada componente VueJS possui 3 tags: &lt;template&gt;, &lt;style&gt; e &lt;script&gt; com o conteúdo do documento, estilo e javascript do componente no mesmo arquivo. Arquivos externos também podem ser referenciados com o atributo src em cada uma dessas tags. 
+
+* **Dia 16 - Em VueJS diretivas e componentes são coisas diferentes**: As diretivas no VueJs são utilizadas para casos em que desejamos manipular o DOM, algo que faríamos com link no AngularJS. 
+
 * **Dia 11 - Uma característica do export default**: Quando uso &quot;export default&quot; em um arquivo javascript. Para importa-lo em outro lugar devo usar &quot;import NomeDoArquivo&quot; from &quot;NomeDoArquivo.extensao&quot;. 
 
 * **Dia 10 - Que podemos utilizar um manifest no index.html**: Esse manifest deve listas todos os arquivos que gostaríamos de carregar para o Application Cache. 
