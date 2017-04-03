@@ -5,6 +5,10 @@ Este é um repositório com uma lista gerada automaticamente contendo meus apren
 
 ## 2017
 
+### Abril
+
+* **Dia 03 - Jade mudou de nome para PugJS e é fácil usa-lo no VueJS**: Basta adicionar um atributo lang&#x3D;&quot;pug&quot; na tag &lt;template&gt; do componente VueJs. Ficando assim: &lt;template lang&#x3D;&quot;pug&quot;&gt; e lá dentro é só escrever com pug.  Claro, usando o webpack-simple. 
+
 ### Março
 
 * **Dia 31 - Como adicionar um &quot;new Date()&quot; no data() de um componente VueJS**: É necessário transformá-lo em um JSON plain object como uma string https://github.com/vuejs/vue/issues/212 
