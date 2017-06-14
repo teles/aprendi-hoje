@@ -5,6 +5,10 @@ Este é um repositório com uma lista gerada automaticamente contendo meus apren
 
 ## 2017
 
+### Junho
+
+* **Dia 14 - A estrutura dos flash cards**: Aprendi que flashcards podem ser usados para aprender coisas de forma espaçada. 
+
 ### Abril
 
 * **Dia 03 - Jade mudou de nome para PugJS e é fácil usa-lo no VueJS**: Basta adicionar um atributo lang&#x3D;&quot;pug&quot; na tag &lt;template&gt; do componente VueJs. Ficando assim: &lt;template lang&#x3D;&quot;pug&quot;&gt; e lá dentro é só escrever com pug.  Claro, usando o webpack-simple. 
